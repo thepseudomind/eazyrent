@@ -1,0 +1,44 @@
+.detail-box{
+    height: 32.5rem;
+    flex: 0 0 45%;
+    /* background-color: tomato; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.detail-box__title{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image:linear-gradient(to right bottom, #f2994a 0%,#f2c94c 50%, #f2994a 100% );
+}
+
+.detail-box__address, .detail-box__type{
+    font-size: 1.5rem;
+    color: grey;
+    font-weight: 500;
+}
+
+.detail-box__price{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: black;
+}
+
+.detail-box__btn{
+    color:white;
+}
+
+.detail-box__btn:link, .detail-box__btn:active{
+    align-self: flex-start;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    background-color: #f2994a;
+    /* background:linear-gradient(to right bottom, #f2994a 0%,#f2c94c 100%); */
+    border-radius: .5rem;
+}

@@ -1,0 +1,21 @@
+.app__main--back{
+    color: black;
+}
+
+.app__main--back:link, .app__main--back:active{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 18rem;
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+.app__main--back-button{
+    font-size: 3rem;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image:linear-gradient(to right bottom, #f2994a 0%,#f2c94c 50%, #f2994a 100% );
+}
