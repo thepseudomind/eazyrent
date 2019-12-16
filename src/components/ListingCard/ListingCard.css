@@ -3,11 +3,7 @@
     padding: 2rem 0;
     background-color: white;
     border-radius: 2rem;
-<<<<<<< HEAD
     box-shadow: .3rem .3rem .5rem #d6d6d6;
-=======
-    box-shadow: .3rem .3rem .5rem rgba(black, .8);
->>>>>>> b1b957c725a0de1dfa657c0b6f81e51305a992f7
     border: .1rem solid #fdf4eb;
     display: flex;
     justify-content: space-evenly;
@@ -18,7 +14,6 @@
 
 .listing-card:hover{
     background:linear-gradient(to right bottom, #f2994a 0%,#f2c94c 100% );
-<<<<<<< HEAD
     border: .1rem solid #f2c94c ;
 }
 
@@ -33,20 +28,6 @@
 .listing-card:hover .listing-card__btn{
     color: #683507;
     background-color: white;
-=======
-}
-
-.listing-card:hover .listing-card__text{
-    color: white;
-}
-
-.listing-card:hover .listing-card__details{
-    color: white;
-}
-
-.listing-card:hover .listing-card__icon{
-    opacity: 1;
->>>>>>> b1b957c725a0de1dfa657c0b6f81e51305a992f7
 }
 
 .listing-card__img{
@@ -109,10 +90,7 @@
     justify-content: space-between;
     align-items: flex-end;
     color: #683507;
-<<<<<<< HEAD
     transition: all .2s ease;
-=======
->>>>>>> b1b957c725a0de1dfa657c0b6f81e51305a992f7
 }
 
 .listing-card__details--price{
@@ -127,10 +105,6 @@
     margin-right: .25rem;
     font-size: 1rem;
     font-weight: 600;
-<<<<<<< HEAD
-=======
-    /* color: red; */
->>>>>>> b1b957c725a0de1dfa657c0b6f81e51305a992f7
 }
 
 
@@ -148,12 +122,4 @@
     box-shadow: 0 .2rem 1rem #565656;
     border-radius: .5rem;
     padding: 1rem 2.5rem;
-<<<<<<< HEAD
-=======
-}
-
-.listing-card:hover .listing-card__btn{
-    color: #683507;
-    background-color: white;
->>>>>>> b1b957c725a0de1dfa657c0b6f81e51305a992f7
 }

@@ -1,24 +1,16 @@
 .app__sidebar{
-<<<<<<< HEAD
     height: 50%;
     box-shadow: 0 0 5rem rgba(0, 0, 0, 0.1);
-=======
-    box-shadow: 1rem 0 5rem rgba(black, .3);
->>>>>>> b1b957c725a0de1dfa657c0b6f81e51305a992f7
     background-color: white;
     flex: 0 0 20%;
     display: flex;
     position: sticky;
     flex-direction: column;
-<<<<<<< HEAD
     justify-content: space-around;
-=======
->>>>>>> b1b957c725a0de1dfa657c0b6f81e51305a992f7
     align-items: center;
     padding: 2rem 0;
 }
 
-<<<<<<< HEAD
 
 /* .app__sidebar > *{
     background-color: blue;
@@ -27,16 +19,6 @@
 .app__sidebar > *:not(:last-child){
     margin-bottom: 2.5rem;
 } */
-=======
-.app__sidebar > *{
-    /* background-color: lightsalmon; */
-    height: 80vh;
-}
-
-.app__sidebar > *:not(:last-child){
-    margin-bottom: 2rem;
-}
->>>>>>> b1b957c725a0de1dfa657c0b6f81e51305a992f7
 
 .app__sidebar--logo-box{
     flex: 0 0 5%;
@@ -45,20 +27,12 @@
 }
 
 .app__sidebar--logo{
-<<<<<<< HEAD
     width: 5rem;
     height: 5rem;
 }
 
 .app__sidebar--menu{
     flex: 0 0 55%;
-=======
-    width: 20%;
-}
-
-.app__sidebar--menu{
-    flex: 0 0 50%;
->>>>>>> b1b957c725a0de1dfa657c0b6f81e51305a992f7
     width: 100%;
 }
 
@@ -115,11 +89,7 @@
 }
 
 .app__sidebar--banner{
-<<<<<<< HEAD
     flex: 0 0 30%;
-=======
-    flex: 0 0 35%;
->>>>>>> b1b957c725a0de1dfa657c0b6f81e51305a992f7
     width: 70%;
     border-radius: .5rem;
     background:linear-gradient(90deg, #f2994a 0%,#f2c94c 100% );
