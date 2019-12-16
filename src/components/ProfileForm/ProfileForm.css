@@ -1,0 +1,71 @@
+.profile-form{
+    width: 100%;
+    padding: 2rem 0;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-form__row{
+    width: 90%;
+    margin: 0 auto;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-form__row:not(:last-child){
+    margin-bottom: 3rem;
+}
+
+.profile-form__form{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.profile-form__form--input{
+    display: block;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.8rem;
+    padding: 1rem 2.5rem;
+    width: 30rem;
+    border: .2rem solid #e8edf7;
+    border-radius: .5rem;
+    transition: all .2s ease;
+}
+
+.profile-form__form--input::placeholder, .profile-form__form--input::-moz-placeholder, .profile-form__form--input::-webkit-input-placeholder, .profile-form__form--input::-ms-input-placeholder{
+    /* font-family: 'Quicksand', sans-serif; */
+    font-size: 2rem;
+    color:#e8edf7;
+    color:red;
+    text-transform: capitalize;
+}
+
+.profile-form__form--input:focus{
+    outline: none;
+    border: .2rem solid #f2994a ;
+}
+
+.profile-form__form--label{
+    color:black;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    margin-bottom: .5rem;
+}
+
+.profile-form__btn{
+    color:white;
+}
+
+.profile-form__btn:link, .profile-form__btn:active{
+    margin-top: 2rem;
+    display: inline-block;
+    align-self: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 1.25rem 2.5rem;
+    border-radius: .5rem;
+    background:linear-gradient(90deg, #f2994a 0%,#f2c94c 100% );
+}

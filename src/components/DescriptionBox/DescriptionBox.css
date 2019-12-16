@@ -1,0 +1,23 @@
+.description-box{
+    flex: 0 0 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.description-box__title{
+    align-self: flex-start;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: .1rem solid #f2994a;
+    color:black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image:linear-gradient(to right bottom, #f2994a 0%,#f2c94c 50%, #f2994a 100% );
+}
+
+.description-box__subtitle{
+    margin-top: 1rem;
+    font-size: 1.75rem;   
+}

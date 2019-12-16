@@ -1,0 +1,81 @@
+.banks{
+    /* background-color: blue; */
+    height: 20rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.banks > *{
+    margin: 1rem;
+}
+
+.bank{
+    background:linear-gradient(90deg, #ff4e50 0%,#f9d423 100% );
+    box-shadow: 0 .2rem 2rem rgba(0, 0, 0, 0.205);
+    height: 15rem;
+    width: 30%;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.bank.inactive{
+    background:linear-gradient(90deg, #1e130c 0%,#9a8478 100% );
+    box-shadow: 0 .2rem 2rem rgba(0, 0, 0, 0.205);
+    height: 15rem;
+    width: 30%;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+.bank__content{
+    width: 80%;
+    /* background-color: gold; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bank__content--name{
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: .4rem;
+}
+
+.bank__content--account{
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: .35rem;
+}
+
+.bank__content--status{
+    margin-top: .5rem;
+    padding: .5rem 1.5rem;
+    background-color: #f9d423;
+    /* background-color: red; */
+    border-radius: 5rem;
+    font-weight: 600;
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center; */
+}
+
+.bank__content--indicator{
+    margin-right: .5rem;
+    display: inline-block;
+    height: .5rem;
+    width: .5rem;
+    border-radius: 50%;
+    background-color: #3FBC43;
+}

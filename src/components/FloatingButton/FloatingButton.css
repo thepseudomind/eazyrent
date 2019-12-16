@@ -1,0 +1,21 @@
+.floating-button{
+    color: black;
+}
+
+.floating-button:link, .floating-button:link:active{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 .2rem 3rem rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.floating-button:focus{
+    outline: none;
+    outline-color: transparent;
+}
