@@ -5,6 +5,7 @@ const DetailBox = ()=>{
     return (
         <div className="detail-box">
             <h1 className="detail-box__title">2 bedroom flat</h1>
+<<<<<<< HEAD
             <p className="detail-box__summary">Summary</p>
             <div className="detail-box__details">
                 <div className="detail-box__info">
@@ -53,6 +54,14 @@ const DetailBox = ()=>{
                 <span>Share</span>
                 <a href="/" className="detail-box__btn">Book now</a>
             </div>
+=======
+            <p className="detail-box__address">Address: 2 Ajanaku Street, thanos, okokomaiko, her</p>
+            <p className="detail-box__type">Rent type: Monthly</p>
+            <p className="detail-box__type">Bedrooms: 2</p>
+            <p className="detail-box__type">Bathrooms: 2</p>
+            <p className="detail-box__price">₦25000</p>
+            <a href="/" className="detail-box__btn">Book now</a>
+>>>>>>> b1b957c725a0de1dfa657c0b6f81e51305a992f7
         </div>
     );
 }

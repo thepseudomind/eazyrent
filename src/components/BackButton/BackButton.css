@@ -12,6 +12,7 @@
     font-weight: 500;
 }
 
+<<<<<<< HEAD
 .app__main--back--notext:link, .app__main--back--notext:active{
     text-decoration: none;
     display: flex;
@@ -22,6 +23,8 @@
     font-weight: 500;
 }
 
+=======
+>>>>>>> b1b957c725a0de1dfa657c0b6f81e51305a992f7
 .app__main--back-button{
     font-size: 3rem;
     background-clip: text;

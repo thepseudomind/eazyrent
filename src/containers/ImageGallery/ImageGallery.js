@@ -26,14 +26,24 @@ class ImageGallery extends Component{
     render(){
         return (
             <div className="image-gallery">
+<<<<<<< HEAD
                 <img alt="mainImage" className="image-gallery__active" src={this.state.activeImage}/>
+=======
+                <img className="image-gallery__active" src={this.state.activeImage}/>
+>>>>>>> b1b957c725a0de1dfa657c0b6f81e51305a992f7
                 <div className="image-gallery__inactive">
                     {this.state.images.map(
                         (v, i) => {
                             if(images[i] === this.state.activeImage){
+<<<<<<< HEAD
                                 return <img key={images[i]} alt="activeImage" className="image-gallery__inactive--images image-gallery__inactive--images--active" src={images[i]} onClick={()=> this.changeActiveImage(images[i])}/>
                             }else{
                                 return <img key={images[i]} alt="inactiveImage" className="image-gallery__inactive--images" src={images[i]} onClick={()=> this.changeActiveImage(images[i])}/>
+=======
+                                return <img key={images[i]} className="image-gallery__inactive--images image-gallery__inactive--images--active" src={images[i]} onClick={()=> this.changeActiveImage(images[i])}/>
+                            }else{
+                                return <img key={images[i]} className="image-gallery__inactive--images" src={images[i]} onClick={()=> this.changeActiveImage(images[i])}/>
+>>>>>>> b1b957c725a0de1dfa657c0b6f81e51305a992f7
                             }
                         }
                     )}
