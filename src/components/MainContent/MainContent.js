@@ -5,14 +5,16 @@ import ViewListing from '../../pages/ViewListing/ViewListing';
 import '../../pages/Profile/Profile';
 import Profile from '../../pages/Profile/Profile';
 import PaymentPage from '../../pages/PaymentPage/PaymentPage';
+import AddListing from '../../pages/AddListing/AddListing';
 
-const MainContent = ({listings, currentRoute})=>{
+const MainContent = ({listings})=>{
     return (
         <section className="app__main">
             {/* <ListingPage listings = {listings}/> */}
+            <AddListing />
             {/* <ViewListing/> */}
             {/* <Profile/> */}
-            <PaymentPage/>
+            {/* <PaymentPage/> */}
         </section>
     );
 }

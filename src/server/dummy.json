@@ -1,0 +1,84 @@
+{
+    "users" : {
+        "abgfigu143668": {
+            "listings" : [
+                {
+                    "id": "1234",
+                    "name" : "2 bedroom flat",
+                    "address": "6, gotham street, batman avenue, that fun town",
+                    "price" : "124000",
+                    "type" : "yearly",
+                    "imageUrl" : "http://localhost:3001/img/home-1.jpg"
+                },
+                {
+                    "id": "1235",
+                    "name" : "3 bedroom flat",
+                    "address": "6, gotham street",
+                    "price" : "244000",
+                    "type" : "monthly",
+                    "imageUrl" : "http://localhost:3001/img/home-3.jpg"
+                },
+                {
+                    "id": "1245",
+                    "name" : "5 bedroom flat",
+                    "address": "6, gotham street",
+                    "price" : "348000",
+                    "type" : "monthly",
+                    "imageUrl" : "http://localhost:3001/img/home-2.jpg"
+                }
+            ]
+        },
+        "jufrge43668": {
+            "listings" : [
+                {
+                    "id": "1234",
+                    "name" : "5 bedroom flat",
+                    "address": "6, gotham street, batman avenue, that fun town",
+                    "price" : "400000",
+                    "type" : "yearly",
+                    "imageUrl" : "http://localhost:3001/img/home-6.jpg"
+                },
+                {
+                    "id": "1235",
+                    "name" : "1 bedroom flat",
+                    "address": "6, gotham street",
+                    "price" : "24000",
+                    "type" : "monthly",
+                    "imageUrl" : "http://localhost:3001/img/home-5.jpg"
+                },
+                {
+                    "id": "1245",
+                    "name" : "5 bedroom flat",
+                    "address": "6, gotham street",
+                    "price" : "348000",
+                    "type" : "monthly",
+                    "imageUrl" : "http://localhost:3001/img/home-4.jpg"
+                },
+                {
+                    "id": "2434",
+                    "name" : "5 bedroom flat",
+                    "address": "6, gotham street",
+                    "price" : "348000",
+                    "type" : "monthly",
+                    "imageUrl" : "http://localhost:3001/img/home-7.jpg"
+                },
+                {
+                    "id": "1374",
+                    "name" : "5 bedroom flat",
+                    "address": "6, gotham street",
+                    "price" : "348000",
+                    "type" : "monthly",
+                    "imageUrl" : "http://localhost:3001/img/home-8.jpg"
+                },
+                {
+                    "id": "9234",
+                    "name" : "5 bedroom flat",
+                    "address": "6, gotham street",
+                    "price" : "348000",
+                    "type" : "monthly",
+                    "imageUrl" : "http://localhost:3001/img/home-3.jpg"
+                }
+            ]
+        }
+    }
+}

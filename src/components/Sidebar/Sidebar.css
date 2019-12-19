@@ -1,5 +1,5 @@
 .app__sidebar{
-    height: 50%;
+    height: 100vh;
     box-shadow: 0 0 5rem rgba(0, 0, 0, 0.1);
     background-color: white;
     flex: 0 0 20%;

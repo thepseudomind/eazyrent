@@ -1,4 +1,4 @@
-import { PAGEROUTE, ADDTOBANK, CHANGEFORM, RESETALERTBOX, RETRIEVESTATE, EDITBANK, OVERWRITEBANK } from "../constants/constants";
+import { PAGEROUTE, ADDTOBANK, CHANGEFORM, RESETALERTBOX, RETRIEVESTATE, EDITBANK, OVERWRITEBANK, DELETEBANK } from "../constants/constants";
 import { Bank } from '../types/types';
 
 const initialRoute = {
@@ -55,16 +55,28 @@ export const bankReducers = (state = initialBanks, action={}) =>{
             return state;
 
         case OVERWRITEBANK:
-            const editedBank = action.payload;
+            let newBanks;
             for (const bank of state.banks) {
                 if(bank.id === parseInt(action.payload.id)){
                     const indexToChange = state.banks.indexOf(bank);
-                    state.banks.splice(indexToChange, 1, editedBank);
-                    const newBanks = state.banks;
-                    localStorage.setItem('bank', JSON.stringify({...state, form: '', banks: newBanks})); //Persisting bank changes in localstorage
-                    return {...state, alert: 'Bank details changed', banks: newBanks};
+                    state.banks.splice(indexToChange, 1, action.payload);
+                    newBanks = state.banks;
                 }
             }
+            localStorage.setItem('bank', JSON.stringify({...state, form: '', banks: newBanks})); //Persisting bank changes in localstorage
+            return {...state, alert: 'Bank details changed', banks: newBanks};
+
+        case DELETEBANK:
+                let remainingBanks;
+                for (const bank of state.banks) {
+                    if(bank.id === parseInt(action.payload)){
+                        const indexToDelete = state.banks.indexOf(bank);
+                        state.banks.splice(indexToDelete, 1);
+                        remainingBanks = state.banks;
+                    }
+                }
+                localStorage.setItem('bank', JSON.stringify({...state, form: '', banks: remainingBanks})); //Persisting bank changes in localstorage
+                return {...state, alert: 'Bank deleted', banks: remainingBanks};
 
         case RESETALERTBOX:
                 return {...state, alert: action.payload};

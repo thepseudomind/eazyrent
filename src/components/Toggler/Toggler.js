@@ -1,13 +1,13 @@
 import React from 'react';
 import './Toggler.css';
 
-const Toggler = ()=>{
+const Toggler = ({toggle})=>{
     return (
         <span className="toggler">
-            <input type="radio" name="activity" id="active" value="active" className="toggler__input" defaultChecked />
-            <label htmlFor="active"  className="toggler__label">Active</label>
-            <input type="radio" name="activity" id="inactive" value="inactive" className="toggler__input" />
-            <label htmlFor="inactive" className="toggler__label">Inactive</label>
+            <input type="radio" name="activity" id="active" value="userListings" className="toggler__input" defaultChecked onChange={(e)=>toggle(e.target.value)}/>
+            <label htmlFor="active"  className="toggler__label">My Homes</label>
+            <input type="radio" name="activity" id="inactive" value="otherListings" className="toggler__input" onChange={(e)=>{toggle(e.target.value)}}/>
+            <label htmlFor="inactive" className="toggler__label">Other Homes</label>
         </span>
     );
 }

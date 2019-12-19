@@ -9,7 +9,7 @@ import electricity from '../../img/electricity.png';
 const ListingCard = (listing)=>{
     return (
         <div className="listing-card">
-            <div className="listing-card__img-box"><img src={test} alt={listing.name} className="listing-card__img"/></div>
+            <div className="listing-card__img-box"><img src={listing.image} alt={listing.name} className="listing-card__img"/></div>
             <div className="listing-card__text">
                 <h3 className="listing-card__text--name">{listing.name}</h3>
                 <p className="listing-card__text--address">{listing.address}</p>

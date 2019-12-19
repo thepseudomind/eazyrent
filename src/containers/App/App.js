@@ -1,22 +1,8 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { homes } from '../../homes';
-import Sidebar from '../../components/Sidebar/Sidebar';
-import MainContent from '../../components/MainContent/MainContent';
 import './App.css';
-import { changePageRoute } from '../../actions/actions';
-
-// const mapStateToProps = (state) => {
-//     return {
-//         route: state.route
-//     };
-// }
-
-// const mapDispatchToProps = (dispatch) =>{
-//     return {
-//         changeRoute: (e)=> dispatch(changePageRoute(e.target.value))
-//     }
-// }
+import { homes } from '../../homes';
+import Auth from '../../pages/Auth/Auth';
+import Dashboard from '../../pages/Dashboard/Dashboard';
 
 class App extends Component{
     constructor(){
@@ -27,13 +13,9 @@ class App extends Component{
     }
 
     render(){
-        // const {route, changeRoute} = this.props;
-        // console.log(route);
         return(
-            <div className="app">
-                <Sidebar/>
-                <MainContent listings = {this.state.homes}/>
-            </div>
+            // <Auth/>
+            <Dashboard homes = {this.state.homes}/>
         );
     }
 }

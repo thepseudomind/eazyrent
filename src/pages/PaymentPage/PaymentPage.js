@@ -5,7 +5,7 @@ import BackButton from '../../components/BackButton/BackButton';
 import Banks from '../../components/Banks/Banks';
 import FloatingButton from '../../components/FloatingButton/FloatingButton';
 import PaymentForm from '../../components/PaymentForm/PaymentForm';
-import { addToBank, changeForm, resetAlertBox, retrieveState, editBank, overwriteBank } from '../../actions/actions';
+import { addToBank, changeForm, resetAlertBox, retrieveState, editBank, overwriteBank, deleteBank } from '../../actions/actions';
 import AlertBox from '../../components/AlertBox/AlertBox';
 
 const mapStateToProps = state => ({
@@ -21,6 +21,7 @@ const mapDispatchToProps = dispatch => ({
     addToBank: (newBank) => dispatch(addToBank(newBank)),
     editBank: (bankID)=> dispatch(editBank(bankID)),
     overwriteBank: (bank)=> dispatch(overwriteBank(bank)),
+    deleteBank: (bankID)=> dispatch(deleteBank(bankID)),
     resetAlertBox: () => dispatch(resetAlertBox())
 });
 
@@ -30,14 +31,14 @@ class PaymentPage extends Component{
     }
 
     render(){
-        const {form, alert, banks, changeForm, addToBank, editBank, bankToEdit, overwriteBank, resetAlertBox} = this.props;
+        const {form, alert, banks, changeForm, addToBank, editBank, bankToEdit, overwriteBank, deleteBank, resetAlertBox} = this.props;
         return (
             <div>
                 <BackButton text={'Back to listing'}/>
                 <AlertBox message={alert}/>
                 <div className="app__main--content">
                     <div className="app__main--details">
-                        <Banks banks={banks} action={changeForm} edit={editBank}/>
+                        <Banks banks={banks} action={changeForm} edit={editBank} reset={resetAlertBox} deleteBank={deleteBank}/>
                     </div>
                     <div className="app__main--details">
                         <PaymentForm form={form} action={changeForm} addToBank={addToBank} banks={banks} bankToEdit={bankToEdit} overwriteBank={overwriteBank}/>

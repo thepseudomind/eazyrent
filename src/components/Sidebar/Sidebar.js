@@ -16,7 +16,7 @@ const Sidebar = ()=>{
             </div>
             <div className="app__sidebar--menu">
                 <ul>
-                    <li><a href="/" className="app__sidebar--menu--items"><img src={home} alt="home" className="app__sidebar--menu--icons"/>Home</a></li>
+                    <li><a href="http://localhost:5500/" className="app__sidebar--menu--items"><img src={home} alt="home" className="app__sidebar--menu--icons"/>Home</a></li>
                     <li><a href="/" className="app__sidebar--menu--items"><img src={chart} alt="listing" className="app__sidebar--menu--icons"/>Listings</a></li>
                     <li><a href="/" className="app__sidebar--menu--items"><img src={man} alt="profile" className="app__sidebar--menu--icons"/>Profile</a></li>
                     <li><a href="/" className="app__sidebar--menu--items"><img src={settings} alt="settings" className="app__sidebar--menu--icons"/> Settings</a></li>

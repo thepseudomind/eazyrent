@@ -23,6 +23,13 @@ const AlertBox = ({message})=>{
                         <p className="alert-box__message">Bank details changed</p>
                     </div>
                 );
+
+        case 'Bank deleted':
+                return (
+                    <div className="alert-box">
+                        <p className="alert-box__message">Bank deleted</p>
+                    </div>
+                );
     
         default:
             return <span></span>;

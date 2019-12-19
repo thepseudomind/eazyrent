@@ -15,9 +15,9 @@ export const addToBank = (bank) => ({
     payload: bank
 });
 
-export const deleteBank = (bank) => ({
+export const deleteBank = (id) => ({
     type: DELETEBANK,
-    payload: bank    
+    payload: id   
 });
 
 export const editBank = (id) => ({

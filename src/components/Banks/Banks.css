@@ -23,6 +23,7 @@
     color: white;
     text-transform: uppercase;
     cursor: pointer;
+    position: relative;
 }
 
 .bank.inactive{
@@ -36,6 +37,30 @@
     align-items: center;
     color: white;
     text-transform: uppercase;
+}
+
+.bank:hover .bank__delete{
+    opacity: 1;
+}
+
+.bank__delete{
+    position: absolute;
+    top: .75rem;
+    right: .75rem;
+    display: inline-block;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.bank__delete--img{
+    width: 1.5rem;
 }
 
 .bank__content{
